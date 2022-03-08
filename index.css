@@ -133,6 +133,17 @@ img {
   padding-right: 3vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
+  position: relative;
+}
+
+.textcontent {
+  width: 100vw;
+  height: 50vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  position: absolute;
 }
 
 .title {
@@ -149,6 +160,8 @@ img {
   font-size: 5vh;
   color: white;
   text-shadow: 0px 0px 10px navy;
+  position: absolute;
+
 }
 
 /* input {

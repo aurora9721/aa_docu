@@ -65,20 +65,32 @@ html {
 
   <div class="slide4">
   <!-- <img id="img4" src="images/fountain_quiet.png"></img> -->
+    <div class="content">
+      <div class="textcontent">
+        <div class="subtitle">
+        When the microphones pick up more noise,<br> the sequence becomes more complex.
+        <br><br>
+        Click anywhere on this image to see the effect.
+        </div>
+      </div>
 
-    <script>
+      <script>
 
-        function play() {
-           var audio = document.getElementById("audio");
-           audio.play().onmousedown;
-           document.getElementById("audio").loop = true;
-       }
+          function play() {
+             var audio = document.getElementById("audio");
+             audio.play().onmousedown;
+             document.getElementById("audio").loop = true;
+         }
 
-       </script>
+         </script>
 
-       <!-- <input type="button" value="PLAY" onclick="play()"> -->
-          <input type="button" value="PLAY" onmousedown="play()">
-       <audio id="audio" src="sound/peopletalking(amped).wav" controls></audio>
+         <!-- <input type="button" value="PLAY" onclick="play()"> -->
+            <input type="button" value="PLAY" onmousedown="play()">
+         <audio id="audio" src="sound/peopletalking(amped).wav" controls></audio>
+
+    </div>
+
+
 
 
     <!-- <audio controls="audiocontrols">
