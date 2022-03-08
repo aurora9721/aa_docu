@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
+  <script src="script.js"></script>
+
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+
+<title>Aurora Navarro Villacampa</title>
+<link rel="icon" type="image/x-icon" href="images/favicon_c_s.png">
+</head>
+
+<body>
+<script>
+  navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+
+         var x = document.getElementById("water");
+         x.play();
+
+          // stop microphone stream acquired by getUserMedia
+          stream.getTracks().forEach(function (track) { track.stop(); });
+      });
+</script>
+
+<audio id="water" controls autoplay loop>
+  <source src="sound/fountainsound.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+
+  <div class="slide1">
+
+    <img id="img1" src="images/fountain.png"></img>
+    <div class="content1">
+      <div class="title">
+        yhdessä
+      </div>
+      <div class="subtitle">
+      A fountain that encourages interaction in urban spaces
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slide2">
+      <img id="img2" src="images/detail_2.png"></img>
+  </div>
+
+  <div class="slide3">
+      <img id="img3" src="images/detail_1.png"></img>
+  </div>
+
+  <div class="slide4">
+  <!-- <img id="img4" src="images/fountain_quiet.png"></img> -->
+
+    <script>
+
+        function play() {
+           var audio = document.getElementById("audio");
+           audio.play().onmousedown;
+           document.getElementById("audio").loop = true;
+       }
+
+       </script>
+
+       <!-- <input type="button" value="PLAY" onclick="play()"> -->
+          <input type="button" value="PLAY" onmousedown="play()">
+       <audio id="audio" src="sound/peopletalking.wav" controls></audio>
+
+
+    <!-- <audio controls="audiocontrols">
+      <source src="sound/fountainsound.wav" type="audio/wav">
+    Your browser does not support the audio element.
+    </audio> -->
+  </div>
+
+</div>
+
+
+</body>
+</html>
